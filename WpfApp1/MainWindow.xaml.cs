@@ -78,7 +78,6 @@ namespace WpfApp1
                         default:
                             lblInfo.Content = "Functie handele neimplementata!";
                             break;
-
                     }
                     return;
                 }
@@ -98,9 +97,7 @@ namespace WpfApp1
 
             //calcul
             Cuvant cuv = new Cuvant(txtDate.Text);
-
             bool isP = cuv.IsPalindrom();
-
             //afisare
             if (isP)
                 lblResults.Content = "Este palindrom";
@@ -127,7 +124,6 @@ namespace WpfApp1
             //calcul
             double medie = Utils.calculMedie(numere);
             //afisare
-
             lblResults.Content =   medie.ToString("f2");
         }
 
